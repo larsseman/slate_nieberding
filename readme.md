@@ -82,7 +82,7 @@ Note: On Windows, one might want to use Console2 instead of the normal cmd promp
 
 #####Structure
 
-- [ ] Create a contact page with a contactform and test it
+- [x] Create a contact page with a contactform and test it
 - [ ] Add a map to the contact page (google maps: [here](https://www.google.com/maps?output=classic))
 - [ ] Generate the favicons, and app icons
 - [ ] Create a footer menu, call the menu 'footermenu' to make the dropdown script work.
