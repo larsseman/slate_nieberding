@@ -1,0 +1,29 @@
+// *************************************
+//
+// Sidebar
+// -> The sidebar
+//
+// *************************************
+
+.Sidebar {
+	background-color: white;
+	position: absolute;
+	width: auto;
+	height: auto;
+	.Sidebar-items {
+		margin-top: 40px;
+		a {
+			display: block;
+			color: $c-darkgrey;
+			padding: 8px 45px;
+			font-size: 15px;
+			letter-spacing: 1.2px;
+			
+			&:hover {
+				color: $c-blue;
+				text-decoration: none;
+			}
+		}
+
+	}
+}

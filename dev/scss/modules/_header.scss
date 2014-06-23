@@ -6,69 +6,87 @@
 // *************************************
 
 .Header {
-  background-image: url("../img/img-header-bg.png");
+  background-image: url("../img/img-header-bg.jpg");
+  background-position: center top;
   background-size: cover;
+  position: relative;
+
+  height: 300px;
+
 }
 
-// -------------------------------------
-// Module specific variables
-// -------------------------------------
-
-// -variable
-
-// -------------------------------------
-// Modifiers
-// -------------------------------------
-
-// .Module--modifierName
-
-// -------------------------------------
-// States
-// -------------------------------------
-
-// .is-module-state
-
-// -------------------------------------
-// Context
-// -------------------------------------
-
-// .has-module
-
-// -------------------------------------
-// Submodules
-// -------------------------------------
-
-// ----- Contact bar ----- //
-
-.Header-contact {
-  @extend .u-gridRow;
-  padding-bottom : $l-whiteSpace;
-  padding-top    : $l-whiteSpace;
-  background: rgba($c-black,0.5);
+.Header-text {
+	position: absolute;
+	background-color: rgba(255,255,255,0.7);
+	width: auto;
+	height: 60px;
+	top: 115px;
+	
+	p {
+		font-size: 27px;
+		font-weight: 200;
+		line-height: 8px;
+		letter-spacing: 2px;
+		padding: 0 20px;
+	}
 }
 
-// ----- Contact bar ----- //
 
-.Header-logo {
-  @extend .u-gridRow;
-  padding-bottom : $l-whiteSpace;
-  padding-top    : $l-whiteSpace;
-  background: rgba($c-black,0.25);
+.page-title {
+	background-color: $c-blue;
+	border-top: 6px solid white;
+	border-bottom: 6px solid white;
+	
+	h2 {
+		text-align: center;
+		color: white;
+		font-size: 20px;
+		line-height: 20px;
+		font-weight: 400;
+		letter-spacing: 1.7px;
+	}
 }
 
-// ----- Nav bar ----- //
+.good-points-wrap {
+	background-color: $c-darkgrey;
+	color: white;
+	height: 240px;
+	
+	.good-points {
+		margin-top: 50px;	
+		margin-left: 300px;	
 
-.Header-nav {
-  @extend .u-gridRow;
-  padding-bottom : $l-whiteSpace;
-  padding-top    : $l-whiteSpace;
-  background: $c-blue;
+		h3 {
+			font-size: 20px;
+			font-weight: 300;
+			letter-spacing: 1.5px;
+			line-height: 5px;
+		}
+		
+		.points-box {
+			float: left;
+			width: 300px;
+			p {
+				display: block;
+				font-weight: 300;
+				letter-spacing: 1.5px;
+			}
+		}
+	}
 }
 
-// ----- Carousel ----- //
+// for the contact page header..
+.contactTop-bg {
+	background-color: $c-darkgrey;
+	p {
+		color: white !important;
+		font-weight: 300;
+	}
+}
 
-.Header-carousel {
-  @extend .u-gridRow;
-  padding-bottom : ($l-whiteSpace * 4);
-  padding-top    : ($l-whiteSpace * 4);
+//---- page specific adjustments ---
+.page-id-4 {
+	.pagetitle {
+		display: none;
+	}
 }

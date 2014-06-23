@@ -1,4 +1,5 @@
 .Footer {
+	background-color: $c-blue;
 }
 
 .Footer-inner {
@@ -6,4 +7,44 @@
 
 .Footer-inner .widget {
 	@include span-columns(4);
+	margin-bottom: 10px;
+	h4 {
+		color: white;
+		margin: 17px 0;
+		letter-spacing: 1px;
+	}
+	p {
+		color: white;
+		font-size: 15px;
+		font-weight: 500;
+		letter-spacing: 0.5px;
+	}	
+}
+
+.Socket {
+	position: relative;
+	text-align: center;
+	line-height: 5px;
+	a {
+		font-weight: 600;
+		color: $c-blue;
+		span {
+			color: #ff8100;
+		}
+		&:hover {
+			text-decoration: none;
+			opacity: 0.6; 
+		}
+	}
+	
+	select.menu {
+		position: absolute;
+		top: 6px;
+		right: 40px;
+		border: 1px solid $c-darkgrey;
+		border-radius: 6px;
+		padding: 0 15px;
+		color: $c-blue;
+	}
+
 }

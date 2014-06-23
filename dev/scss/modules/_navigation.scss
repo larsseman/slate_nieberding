@@ -6,9 +6,26 @@
 // *************************************
 
 .Navigation {
-  text-align: center;
+	text-align: right;
 }
 
+.Nav-top {
+	background-color: white;
+	height: 110px;
+}
+
+.Nav-bot {
+	height: 65px;
+	background-color: #6D6B6C;
+}
+
+.Nav-tel {
+	float: right;
+}
+
+.logo-top, .logo-bot {
+	float: left;
+}
 // -------------------------------------
 // Module specific variables
 // -------------------------------------
@@ -24,7 +41,7 @@
 // -------------------------------------
 
 .Navigation-link.is-active {
-  text-decoration: underline;
+	color: #ccc;
 }
 
 // -------------------------------------
@@ -41,22 +58,100 @@
 
 .Navigation-listItem {
   display: inline;
-  margin: 0 rem(15px);
   &:first-of-type {
     margin-left: 0;
   }
   &:last-of-type {
     margin-right: 0;
+    .Navigation-link {
+	    border-right: 0px solid black;
+    }
   }
 }
 
 // ----- Navigation link ----- //
 
 .Navigation-link {
-  text-transform: uppercase;
+	color: white;
+	line-height: 30px;
+	font-size: 17px;
+	font-weight: 200;
+	border-right: 1px solid white;
+	padding: 0 15px;
+	
+	&:hover, &:focus {
+	  color: #ccc;
+	  text-decoration: none;
+	}
 }
 
 .Navigation-link--invertedBold {
   color: $c-white; 
   font-weight: bold;
+}
+
+
+.Navigation-list.is-hidden {
+    display: none;
+}
+
+.Navigation-list {
+    display: block;
+}
+
+//---------------------------------------
+// ------ ul dropdown menu style --------
+
+.Navigation-listItem--hasDropdown {
+	position: relative;
+	text-decoration: none;
+}
+ 
+ul.Navigation-list--dropdown {
+	display: block;
+	height: auto;
+    position: absolute;
+	background-color: $c-darkgrey;
+	border: 1px solid white;
+	border-top: 0px solid white;
+	border-bottom: 0px solid white;
+	width: auto;
+    line-height: 40px;
+    top: 43px;
+    left: 0;
+    z-index: 110;
+    box-shadow: 0px 10px 15px -7px rgba(0, 0, 0, 0.5);
+	
+	li.Navigation-listItem {
+		display: block;
+		padding: 0 2px;
+		width: 215px;
+		text-align: center; 				
+		a {
+			background-color: transparent;
+			border: 0px solid;
+		}
+		
+	}	
+}
+//---------------------------------------
+
+.Nav-tel {
+	font-weight: 600;
+	line-height: 20px;
+	color: #6D6B6C;	
+	p {
+		font-size: 22px;
+	} 
+}
+
+.logo-top {
+	max-width: 305px;
+	margin-top: 15px;
+}
+
+.logo-bot {
+	max-width: 295px;
+	margin-top: 8px;
+	margin-left: 8px;
 }

@@ -41,5 +41,71 @@
   </head>
   <body <?php body_class(); ?> >
 
-    <!-- Main navigation -->
-    <?php include 'includes/navigation.php'; ?>
+<!-- Main navigation -->
+	<div class="Nav-wrap">	
+		<div class="Nav-top">
+			<div class="u-gridContainer">
+				<div class="logo-top">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-top.jpg">
+				</div>
+				
+				<div class="Nav-tel">
+					<p>06 - 391 14 001</p>
+					<p>0252 - 34 88 67</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="Nav-bot">
+			<div class="u-gridContainer">
+				<div class="logo-bot">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-bot.jpg">
+				</div>
+				
+				<?php include 'includes/navigation.php'; ?>
+			</div>
+		</div>
+	</div>
+	
+	
+<!-- Main header -->
+	<div class="Header">
+		<div class="u-gridContainer">
+			<div class="Header-text">
+				<p>Sanitair Installatie</p>
+			</div>
+		</div>
+	</div>
+
+<?php if(is_front_page()) { ?>
+
+	<div class="page-title">
+		<h2>Welkom bij installatie- en loodgietersbedrijf Gebr. Nieberding</h2>
+	
+		<div class="u-gridContainer">
+			<div class="Sidebar">
+				<?php get_sidebar(); ?>
+			</div>
+		</div>
+	</div><!-- pagetitle -->
+	
+	<div class="good-points-wrap">
+		<div class="u-gridContainer">
+			<div class="good-points">
+				<h3>Gebr. Nieberding is gespecialiseerd</h3>
+				<div class="points-box">
+					<p>Centrale verwarming</p>
+					<p>Loodgieterswerk</p>
+					<p>Lood- en zinkwerk</p>
+				</div>
+
+				<div class="points-box">
+					<p>24uurs service & onderhoud</p>
+					<p>Dakbedekking</p>
+					<p>Mechanische ventilatie</p>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+<?php } ?>

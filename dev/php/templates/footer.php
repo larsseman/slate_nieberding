@@ -9,11 +9,30 @@
 	</div>
 
 
-	<div class="Socket">
-		<div class="u-gridContainer">
+	<div class="Socket u-gridContainer">
+		<div>
 			<!-- Copyright info -->
 			<p>&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?> - Website & SEO door 
-					<a href="http://www.lokaalgevonden.nl" target="_blank">LokaalGevonden</a>
+					<a href="http://www.lokaalgevonden.nl" target="_blank">Lokaal<span>Gevonden</span></a> 
+				<?php wp_nav_menu(array( 
+				'theme_location'  => '',
+				'menu'            => 'footermenu',
+				'container'       => 'div',
+				'container_class' => '',
+				'container_id'    => '',
+				'menu_class'      => 'footermenu',
+				'menu_id'         => '',
+				'echo'            => true,
+				'fallback_cb'     => 'wp_page_menu',
+				'before'          => '',
+				'after'           => '',
+				'link_before'     => '',
+				'link_after'      => '',
+				'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+				'depth'           => 0,
+				'walker'          => ''
+					));
+				?>
 			</p>
 		</div>
 	</div>
