@@ -20,8 +20,8 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/apple-touch-icon.png">
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/img/apple-touch-icon.png">
 
     <!-- build:remove:expanded -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/production.min.css">
@@ -50,8 +50,17 @@
 				</div>
 				
 				<div class="Nav-tel">
-					<p>06 - 391 14 001</p>
-					<p>0252 - 34 88 67</p>
+					<a href="tel:0639114001"><p>06 - 391 14 001</p></a>
+					<a href="tel:0252348867"><p>0252 - 34 88 67</p></a>
+				</div>
+				
+				<div class="Nav-tel-ico">
+					<a href="tel:0639114001">
+						<img class="ico-mob" src="<?php echo get_stylesheet_directory_uri(); ?>/img/mobiel.png">
+					</a>
+					<a href="tel:0252348867">
+						<img class="ico-fax" src="<?php echo get_stylesheet_directory_uri(); ?>/img/tel+fax.png">
+					</a>
 				</div>
 			</div>
 		</div>
@@ -62,6 +71,14 @@
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-bot.jpg">
 				</div>
 				
+				<div class="Nav-toggle">
+					<a class="Navigation-menuToggle" id="js-navCollapse">
+						<svg class="Icon Icon--inline" viewBox="0 0 128 128">
+							<use xlink:href="#icon-menu2"></use>
+						</svg>
+					</a>
+				</div>
+
 				<?php include 'includes/navigation.php'; ?>
 			</div>
 		</div>
@@ -70,14 +87,27 @@
 	
 <!-- Main header -->
 	<div class="Header">
-		<div class="u-gridContainer">
-			<div class="Header-text">
-				<p>Sanitair Installatie</p>
-			</div>
+		<div class="Slider">
+			<ul class="Slider-slider bxslider">
+
+                <li class="Slider-img">
+                	<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slide-1.jpg" />
+<!--
+              		<div class="u-gridContainer">
+	                	<div class="Header-text">
+							<p>Sanitair Installatie</p>
+						</div>
+              		</div>
+-->
+				</li>
+
+                <li class="Slider-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slide-2.jpg" /></li>
+			</ul>
 		</div>
 	</div>
 
-<?php if(is_front_page()) { ?>
+
+<?php if(is_front_page() || is_page_template('template-landingspagina.php')) { ?>
 
 	<div class="page-title">
 		<h2>Welkom bij installatie- en loodgietersbedrijf Gebr. Nieberding</h2>
@@ -89,20 +119,25 @@
 		</div>
 	</div><!-- pagetitle -->
 	
+	
 	<div class="good-points-wrap">
 		<div class="u-gridContainer">
 			<div class="good-points">
 				<h3>Gebr. Nieberding is gespecialiseerd</h3>
 				<div class="points-box">
-					<p>Centrale verwarming</p>
-					<p>Loodgieterswerk</p>
-					<p>Lood- en zinkwerk</p>
+					<ul class="Usp-list">
+						<li class="icon check">Centrale verwarming</li>
+						<li class="icon check">Loodgieterswerk</li>
+						<li class="icon check">Lood- en zinkwerk</li>
+					</ul>
 				</div>
 
 				<div class="points-box">
-					<p>24uurs service & onderhoud</p>
-					<p>Dakbedekking</p>
-					<p>Mechanische ventilatie</p>
+					<ul class="Usp-list">
+						<li class="icon check">24uurs service & onderhoud</li>
+						<li class="icon check">Dakbedekking</li>
+						<li class="icon check">Mechanische ventilatie</li>
+					</ul>
 				</div>
 			</div>
 		</div>		

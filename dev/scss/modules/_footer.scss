@@ -10,7 +10,7 @@
 	margin-bottom: 10px;
 	h4 {
 		color: white;
-		margin: 17px 0;
+		margin: 30px 0 15px;
 		letter-spacing: 1px;
 	}
 	p {
@@ -47,4 +47,44 @@
 		color: $c-blue;
 	}
 
+}
+
+//======================================================
+//          @media queries - Responsiveness
+//======================================================
+
+
+@media all and (max-width: 900px) {
+	.Socket {
+		select.menu {
+			position: static;
+		}
+	}
+}
+
+@media all and (max-width: 600px) {
+	.Footer {
+		#text-5, #text-4 {
+			border-top: 1px solid rgba(255,255,255,0.63);
+		}
+	}
+	.Footer-inner .widget {
+		@include span-columns(12);
+		text-align: center;
+		a {
+			color: #fafafa;
+		}
+	}
+	
+	.Socket {
+		line-height: 25px;
+	}	
+}
+
+@media all and (max-width: 400px) {
+	.Socket {
+		p {
+			font-size: 12px;
+		}
+	}
 }

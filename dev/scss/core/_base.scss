@@ -24,7 +24,7 @@ body {
 p {
   font-size: rem($t-fontSize);
 }
-
+ 
 h1, h2, h3,
 h4, h5, h6 {
   font-family: $t-headerFontFamily;
@@ -36,7 +36,13 @@ h1, %u-textH1 {
 }
 
 h2, %u-textH2 {
-  font-size: rem(35px);
+  font-size: 1.8rem;
+  color: $c-blue;
+  line-height: 30px;
+  margin-top: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+
 }
 
 h3, %u-textH3 {
@@ -44,7 +50,13 @@ h3, %u-textH3 {
 }
 
 h4, %u-textH4 {
-  font-size: rem(25px);
+  color: $c-blue;
+  font-size: 20px;
+  line-height: 20px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 h5, %u-textH5 {

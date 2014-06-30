@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Homepage
+Template Name: Landingspagina
 */
 ?>
 
@@ -10,7 +10,7 @@ Template Name: Homepage
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<article class="Content Content--home" id="post-<?php the_ID(); ?>">
 			
-			<div class="Content-entry u-gridRow">
+			<div class="Content-entry leftsidebar u-gridRow">
 				<div class="u-gridCol4 coll-4">
 					<p>.</p>
 				</div>

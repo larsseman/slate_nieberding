@@ -26,6 +26,20 @@
 	}
 }
 
+.Content-entry.leftsidebar {
+	min-height: 900px;
+	p,li {
+		color: $c-darkgrey;
+		letter-spacing: 0.5px;
+	}
+	
+	li {
+		list-style: disc outside none;
+	    margin-left: 20px;
+	    padding-left: 10px;
+	    margin-bottom: 5px;
+	}
+}
 
 .homep-img {
 	background-image: url('../img/homep-img.jpg');
@@ -42,14 +56,142 @@
 	font-weight: 500;
 }
 
+.side-img {
+	background-image:url('../img/keurmerken_groter.png');
+	background-size: cover;
+	margin: 0 auto;
+	height: 305px;
+	width: 50%;
+	
+}
+
+
+ul.Usp-list {
+	line-height: 40px;
+}
+
+
+li.icon::before {
+	content: "";
+	display: inline-block;
+	background-size: cover;
+	height: 1em;
+	width: 1em;
+	
+	vertical-align: middle;
+	padding-bottom: 0.2em;
+	margin-right: 0.5em;
+	background-repeat: no-repeat;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+li.check::before {
+	background-image: url('../img/vinkje.png');
+	height: 1.3em;
+	width: 1.3em;
+
+}
+
+.remeha-logo {
+	background-image: url('../img/remeha-logo.png');
+	background-size: cover;
+	border-radius: 10px;
+	height: 45px;
+	width: 200px;
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.adress-map {
+	margin-top: 25px;
+}
+
+
+//----------------------------------------
+// ------------ form styles --------------
+
+label.gfield_label {
+	font-weight: 300 !important;
+}
+
+input.gform_button {
+	background-color: $c-blue;
+	border-radius: 10px;
+	border: 0px;
+	padding: 5px 10px;
+	color: white;
+	font-weight: 200;
+	border: 3px solid $c-blue;
+	
+	&:hover {
+		background-color: rgba(0,96,143,0.1);
+		color: $c-blue;
+		border: 3px solid $c-blue;
+
+		-webkit-transition:all 0.2s ease;
+		-moz-transition:all 0.2s ease;
+		-o-transition:all 0.2s ease;
+
+	}
+}
+
+.ginput_container {		
+	input, textarea {
+		background-color: rgba(0,96,143,0.1);
+		border-radius: 7px;
+		border: 2px solid $c-blue;
+		color: $c-blue;
+		font-size: 14px !important;
+	}
+}
+
+select.menu {
+	width: 150px;
+}
+//----------------------------------------
+
+
+.App-iphone {
+	float: left;
+	width: 300px;
+}
+
+.App-google {
+	float: left;
+	width: 250px;
+	margin-top: 30px;
+}
+
+.img-1 {
+	
+}
 
 //==========================================================
 //               Page specific adjustments
 //==========================================================
-.page-id-5, .page-id-4 {
+
+.page-id-4 {
 	.Content-entry {
-		min-height: 100px;		
+		min-height: 660px;		
+	}
+}
+.page-id-5 {
+	.Content-entry {
+		min-height: 0px;		
+	}
+	
+	.Content-text {
+		padding-bottom: 20px;
 	}
 }
 
 
+.page-id-20 {
+	h4 {
+		font-size: 19px;
+	}
+}

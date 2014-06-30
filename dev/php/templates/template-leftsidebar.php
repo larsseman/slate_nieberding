@@ -19,11 +19,11 @@ Template Name: Page w/ sidebar on left
 		<div>
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<article class="Content Content--leftsidebar" id="post-<?php the_ID(); ?>">
-				<div class="Content-entry u-gridRow">
-					<div class="u-gridCol4">
+				<div class="Content-entry leftsidebar u-gridRow">
+					<div class="u-gridCol4 coll-4">
 						<p>.</p>
 					</div>
-					<div class="u-gridCol8">
+					<div class="u-gridCol8 coll-8">
 						<?php the_content(); ?>
 						<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 					</div>

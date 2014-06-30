@@ -27,3 +27,29 @@
 
 	}
 }
+
+
+@media all and (max-width: 980px) {
+	.Sidebar {
+		display: none;
+	}
+	.Header-text {
+		display: none;
+	}
+	
+	.good-points-wrap {
+		.good-points {
+		    display: block;
+		    margin: 50px auto 0;
+		    width: 600px;
+		}
+	}
+	
+	.coll-4 {
+		display: none;
+	}
+	
+	.coll-8 {
+		@include span-columns(12);
+	}
+}

@@ -7,6 +7,7 @@
 
 .Navigation {
 	text-align: right;
+	position: relative;
 }
 
 .Nav-top {
@@ -139,9 +140,10 @@ ul.Navigation-list--dropdown {
 .Nav-tel {
 	font-weight: 600;
 	line-height: 20px;
-	color: #6D6B6C;	
+	color: $c-darkgrey;	
 	p {
 		font-size: 22px;
+		color: $c-darkgrey;
 	} 
 }
 
@@ -154,4 +156,127 @@ ul.Navigation-list--dropdown {
 	max-width: 295px;
 	margin-top: 8px;
 	margin-left: 8px;
+}
+
+.Nav-tel-ico {
+	float: right;
+	width: 100px;
+	img {
+		width: 100%;
+		
+	}
+	
+	.ico-mob {
+		float: right;
+		width: 35px;
+		margin: 10px 10px 0 0;
+
+	}
+	
+	.ico-fax {
+		float: right;
+		width: 70px;
+		margin: 5px 5px 0 0;		
+	}
+}
+
+//======================================================
+//          @media queries - Responsiveness
+//======================================================
+
+@media all and (max-width: 770px) {
+	.Nav-tel {
+		display: none;
+	}
+	
+	ul.Navigation-list {
+		position: absolute;
+		.Navigation-listItem {
+			display: block;
+		}
+	}
+	
+	.Navigation {
+		#js-navCollapseTarget {
+			position: absolute;
+			background-color: $c-blue;
+			top: 65px;
+			left: 0;
+			margin: 0;
+			width: 100%;
+			box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.3) inset;
+	
+			ul.Navigation-list {
+				position: static;
+				background-color: rgba(0, 78, 117, 1);
+				border: 0px solid;
+				box-shadow: 0 0 0 #fff;
+
+				
+				.Navigation-listItem {
+					width: 100%;
+					&:first-of-type a {
+						box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.07) inset;
+					}
+
+				}
+				.Navigation-link {
+					line-height: 35px;
+					font-size: 15px;
+				}
+			}
+			
+			.Navigation-listItem {
+				text-align: center;
+	
+				&:first-of-type a {				
+					box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.1) inset;
+					padding-top: 10px;	
+				}
+
+				&:last-of-type a {							
+					box-shadow: 0px 15px 20px -18px rgba(0, 0, 0, 0.6);
+					border-bottom: 0px solid;
+				}
+			 	
+				.Navigation-link {
+					display: block;
+					line-height: 58px;
+					font-size: 20px;
+					border: 0px solid;
+					font-weight: 400;
+					letter-spacing: 1.7px;
+					border-bottom: 1px solid #1e719a;					
+					&:hover {
+						background-color: #1e719a;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 500px) {	
+	.logo-top {
+		width: 220px;
+		margin-top: 38px;
+	}
+	
+	.logo-bot {
+		margin-top: 16px;
+		width: 210px;
+	}
+}
+
+@media all and (max-width: 390px) {	
+	.logo-top {
+		width: 180px;
+		margin-top: 48px;
+	}
+	
+	.logo-bot {
+		margin-top: 20px;
+		width: 170px;
+	}
 }
