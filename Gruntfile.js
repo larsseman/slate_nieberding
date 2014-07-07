@@ -105,6 +105,7 @@ module.exports = function (grunt) {
           //'processhtml:compressed',
           // Copy Wp child css
           'copy:css_child',
+          'copy:img_child',
           // Process images
           //'imagemin:all',
           'delete_sync:img',
@@ -131,6 +132,7 @@ module.exports = function (grunt) {
           'processhtml:expanded',
           // Copy Wp child css
           'copy:css_child',
+		  'copy:img_child',          
           // Process images
           'newer:imagemin:all',
           'delete_sync:img',

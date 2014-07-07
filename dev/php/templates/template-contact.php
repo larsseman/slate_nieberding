@@ -18,21 +18,27 @@ Template Name: Contactpage
 					<div class="Content-text">
 	
 						<div class="u-gridRow">					
-							<div class="adress u-gridCol4 coll-8">
-								<div class="adress-info">
-									<p>Gebr. Nieberding Installatietechniek</p>
-									<p>Haverstraat 91</p>
-									<p>2153 GD Nieuw Vennep</p>
-									<p>Tel. M. Nieberding : 06 - 391 14 001</p>
-									<p>Tel. S. Nieberding : 06 - 487 77 749</p>
-									<p>Fax.nr. 0252 - 348 867</p>
-									<p>E-mail: info@gebrnieberding.nl</p>
-								</div>
-							</div>	
-											
-							<div class="adress-map u-gridCol8 coll-8">
+							<div class="adress-map u-gridCol12 ">
 								<div id="map_canvas"></div>
 							</div>
+
+							<div class="adress">
+								<div class="u-gridCol6 coll-9">
+									<div class="adress-info">
+										<p>Gebr. Nieberding Installatietechniek</p>
+										<p>Haverstraat 91</p>
+										<p>2153 GD Nieuw Vennep</p>
+									</div>
+								</div>
+								<div class="u-gridCol6 coll-9">
+									<div class="adress-info">
+										<p>Tel. M. Nieberding : 06 - 391 14 001</p>
+										<p>Tel. S. Nieberding : 06 - 487 77 749</p>
+										<p>Fax.nr. 0252 - 348 867</p>
+										<p>E-mail: info@gebrnieberding.nl</p>
+									</div>
+								</div>
+							</div>												
 						</div> <!-- /gridRow -->
 
 					</div>

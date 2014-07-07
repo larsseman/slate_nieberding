@@ -110,6 +110,13 @@ li.check::before {
 	margin-top: 25px;
 }
 
+.adress-info {
+	p,a {
+		font-size: 1rem;
+		letter-spacing: 1.4px;
+		font-weight: 400;
+	}
+}
 
 //----------------------------------------
 // ------------ form styles --------------
@@ -166,8 +173,88 @@ select.menu {
 	margin-top: 30px;
 }
 
-.img-1 {
+.img-2 {
+	float: right;
+	max-width: 225px;
+}
+
+.img-4 {
+    float: right;
+    margin-left: 10px;
+    max-width: 200px;
+}
+
+.img-5 {
+	float: right;
+	max-width: 240px;
+}
+
+.img-6, .img-7 {
+	float: left;
+	max-width: 245px;
+	margin: 15px;
+}
+
+.img-8 {
+	float: right;
+	max-width: 200px;
+	margin-left: 10px;
+}
+
+.img-9, .img-10 {
+	float: right;
+}
+.adress-info {
+	a {
+		color: white;
+		text-decoration: underline;
+	}
+}
+
+
+.qr-code img{
+	max-width: 240px;
+}
+
+
+.ngg-gallery-thumbnail img  {
+	border: 4px solid white !important;
+	background-color: $c-blue !important;
+	width: 140px;
+	height: 110px;
+	&:hover {
+		background-color: white !important;
+		border: 4px solid $c-blue !important;
+	}
+}
+
+//-----------------------------------------------------
+
+@media all and (max-width: 685px) {
+	.coll-9 {
+		@include span-columns(12);
+	}
+}
+
+@media all and (max-width: 400px) {
+	.adress-info {
+		p {
+			font-size: 13px;
+		}
+	}
 	
+	.img-1, 
+	.img-2, 
+	.img-3, 
+	.img-4, 
+	.img-5, 
+	.img-6, 
+	.img-7, 
+	.img-8, 
+	.img-9, 
+	.img-10 {
+		display: none;
+	}
 }
 
 //==========================================================

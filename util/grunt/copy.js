@@ -137,7 +137,7 @@ module.exports = function (grunt) {
         expand: true
       }, {
         cwd: 'dev/ico',
-        src: '*.*',
+        src: ['*.*'],
         dest: 'dist/child/ico',
         expand: true
       }]

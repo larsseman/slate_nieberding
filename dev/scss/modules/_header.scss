@@ -104,7 +104,7 @@
 			h3 {
 				text-align: center;
 				margin-bottom: 35px;
-			}
+			} 
 			
 			.points-box {
 				float: none;
@@ -112,7 +112,7 @@
 				margin: 0 auto;
 				width: 265px;
 			}
-		}
+		} 
 	}
 }
 
@@ -123,8 +123,15 @@
 }
 
 @media all and (max-width: 400px) {
-	.page-title h2 {
-		font-size: 15px;
+	.Header {
+		display: none;
+	}
+	
+	.page-title {
+		margin-top: 0px !important;
+		h2 {
+			font-size: 15px;
+		}
 	}
 	.good-points-wrap {	
 		.good-points {
@@ -147,5 +154,11 @@
 .page-id-4 {
 	.pagetitle {
 		display: none;
+	}
+}
+
+.page-id-5 {
+	.Content-entry {
+		padding-top: 0px;
 	}
 }

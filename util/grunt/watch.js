@@ -46,6 +46,7 @@ module.exports = {
     tasks: [
       //'newer:imagemin:all',
       'delete_sync:img',
+      'copy:img_child',
       'rsync:deploy_child'
     ]
   },

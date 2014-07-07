@@ -34,8 +34,9 @@ Template Name: App page
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/googleplay.jpg" class="App-google" />
 
 						<a href="#">Download de app hier</a>
-	
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/qr_code.png" />
+						<div class="qr-code">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/gebr_nieberding_qr_code.jpg" />
+						</div>
 					</div>
 				</div>
 			</article>
