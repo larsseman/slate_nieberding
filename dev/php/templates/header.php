@@ -90,18 +90,11 @@
 		<div class="Slider">
 			<ul class="Slider-slider bxslider">
 
-                <li class="Slider-img">
-                	<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slide-1.jpg" />
-<!--
-              		<div class="u-gridContainer">
-	                	<div class="Header-text">
-							<p>Sanitair Installatie</p>
-						</div>
-              		</div>
--->
-				</li>
+                <li class="Slider-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slide-1.jpg" /></li>
 
                 <li class="Slider-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slide-2.jpg" /></li>
+
+                <li class="Slider-img three"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slide-3.jpg" /></li>
 			</ul>
 		</div>
 	</div>
