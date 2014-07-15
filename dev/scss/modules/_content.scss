@@ -234,6 +234,24 @@ select.menu {
 }
 
 
+.lastimages {
+	img {
+		float: left;
+		display: inline-block;
+		margin-right: 10px;
+	}
+	
+	.img-last1 {
+		max-width: 50%;
+	}
+	.img-last2 {
+		max-width: 40%;
+	}
+
+}
+
+
+
 //-----------------------------------------------------
 
 @media all and (max-width: 685px) {
