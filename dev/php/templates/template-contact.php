@@ -33,7 +33,6 @@ Template Name: Contactpage
 								<div class="u-gridCol6 coll-9">
 									<div class="adress-info">
 										<p>Tel. M. Nieberding : 06 - 391 14 001</p>
-										<p>Tel. S. Nieberding : 06 - 487 77 749</p>
 										<p>Fax.nr. 0252 - 348 867</p>
 										<p>E-mail: info@gebrnieberding.nl</p>
 									</div>

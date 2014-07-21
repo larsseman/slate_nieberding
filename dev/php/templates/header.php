@@ -46,7 +46,7 @@
 		<div class="Nav-top">
 			<div class="u-gridContainer">
 				<div class="logo-top">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-top.jpg">
+					<a href="/home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-top.jpg"></home>
 				</div>
 				
 				<div class="Nav-tel">
@@ -116,7 +116,7 @@
 	<div class="good-points-wrap">
 		<div class="u-gridContainer">
 			<div class="good-points">
-				<h3>Gebr. Nieberding is gespecialiseerd</h3>
+				<h3>Gebr. Nieberding is gespecialiseerd in</h3>
 				<div class="points-box">
 					<ul class="Usp-list">
 						<li class="icon check">Centrale verwarming</li>
