@@ -59,7 +59,7 @@
 						<img class="ico-mob" src="<?php echo get_stylesheet_directory_uri(); ?>/img/mobiel.png">
 					</a>
 					<a href="tel:0252348867">
-						<img class="ico-fax" src="<?php echo get_stylesheet_directory_uri(); ?>/img/tel+fax.png">
+						<img class="ico-fax" src="<?php echo get_stylesheet_directory_uri(); ?>/img/fax.png">
 					</a>
 				</div>
 			</div>
